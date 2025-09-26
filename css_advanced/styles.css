@@ -1,4 +1,4 @@
-/* Basic reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -125,8 +125,6 @@ nav a {
     justify-content: center;
     gap: 139px;
     flex-wrap: wrap;
-    /* width: 1009px;
-    height: 237px; */
     margin: 0 auto;
 }
 
@@ -151,4 +149,44 @@ nav a {
     color: white;
     font-style: italic;
     font-size: 16px;
+}
+
+/* Testimonial Section */
+main section:nth-child(2) {
+    background: #C271FF; /* Purple background */
+    color: white;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Testimonial Image */
+main section:nth-child(2) img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Testimonial Content */
+main section:nth-child(2) blockquote {
+    font-size: 22px;
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 700px;
+}
+
+main section:nth-child(2) h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+main section:nth-child(2) p {
+    font-size: 18px;
+    font-style: italic;
+    opacity: 0.8;
 }
