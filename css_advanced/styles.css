@@ -190,3 +190,195 @@ main section:nth-child(2) p {
     font-style: italic;
     opacity: 0.8;
 }
+
+/* Tutorials Section */
+.tutorials-section {
+    background: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.tutorials-section h2 {
+    font-size: 32px;
+    color: #071629;
+    margin-bottom: 60px;
+    font-weight: 300;
+}
+
+/* Tutorials Grid */
+.tutorials-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Tutorial Card */
+.tutorial-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: left;
+}
+
+.tutorial-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.tutorial-card h3 {
+    font-size: 18px;
+    color: #071629;
+    margin: 20px 20px 10px;
+    font-weight: bold;
+}
+
+.tutorial-desc {
+    color: #666;
+    font-size: 14px;
+    margin: 0 20px 15px;
+    line-height: 1.5;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    margin: 0 20px 10px;
+}
+
+.author-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author-info h4 {
+    font-size: 14px;
+    color: #C271FF;
+    font-weight: bold;
+    margin: 0;
+}
+
+.rating {
+    display: flex;
+    margin: 0 20px 10px;
+    gap: 5px;
+}
+
+.rating i {
+    color: #C271FF;
+    font-size: 12px;
+}
+
+.duration {
+    color: #C271FF;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 20px 20px;
+    text-align: right;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .tutorials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .tutorials-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Membership Section */
+.membership-section {
+    background: #071629; /* Dark blue background */
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.membership-section h2 {
+    font-size: 32px;
+    margin-bottom: 60px;
+    font-weight: 300;
+}
+
+/* Membership Grid */
+.membership-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+}
+
+/* Membership Card */
+.membership-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.membership-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.membership-card h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.membership-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    opacity: 0.8;
+    max-width: 250px;
+}
+
+/* Register Button */
+.register-btn {
+    background: #C271FF;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.3s;
+}
+
+.register-btn:hover {
+    background: #A55AFF;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .membership-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .membership-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .membership-section {
+        padding: 60px 20px;
+    }
+}
